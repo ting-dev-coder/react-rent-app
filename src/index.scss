@@ -1,0 +1,25 @@
+html,
+body {
+  height: 100%;
+  color: #333;
+  background: #efefef;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Microsoft YaHei', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@mixin FlexCenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
