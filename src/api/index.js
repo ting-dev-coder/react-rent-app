@@ -12,3 +12,9 @@ export const GetNews = (areaID) => axios.get(`${basUrl}/home/news`, {
   params: areaID
 })
 
+export const GetHouseList = (filter) => axios.get(`${basUrl}/houses`, {
+  params: filter
+})
+export const GetHouseDetail = (id) => axios.get(`${basUrl}/houses/${id}`)
+
+export const GetUser = () => axios.get(`${basUrl}/user`)

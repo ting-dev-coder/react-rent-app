@@ -1,7 +1,7 @@
-import React, { useState, useEffect, Children } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Grid } from 'antd-mobile'
 import './index.scss'
-import Swiper from './Swiper'
+import Swiper from '../../components/Swiper'
 import { GetSwiper, GetGroup, GetNews } from '../../api'
 
 import Nav1 from '../../assets/images/nav-1.png'
@@ -84,7 +84,7 @@ function Home(props) {
         <Grid.Item key={'grid' + index} className="grid-group-wrapper">
           <div className="group-item">
             <h2 className='title'>{item.title}</h2>
-            <p clsassName='desc'>{item.desc}</p>
+            <p className='desc'>{item.desc}</p>
           </div>
           <img src={baseUrl + item.imgSrc} alt="" />
         </Grid.Item>

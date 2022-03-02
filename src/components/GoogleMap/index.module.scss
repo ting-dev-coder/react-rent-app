@@ -1,0 +1,23 @@
+.label {
+  position: absolute;
+  height: 25px;
+  padding: 5px 10px;
+  line-height: 14px;
+  border-radius: 3px;
+  border: 1px solid #ea312e;
+  color: rgb(255, 255, 255);
+  background: rgb(238, 93, 91);
+  white-space: nowrap;
+  box-shadow: rgb(204, 204, 204) 2px 2px 2px;
+  font-size: 12px;
+}
+
+.mapArrow {
+  background: url(http://map.baidu.com/fwmap/upload/r/map/fwmap/static/house/images/label.png) no-repeat;
+  position: absolute;
+  width: 11px;
+  height: 10px;
+  top: 23px;
+  left: 10px;
+  overflow: hidden;
+}

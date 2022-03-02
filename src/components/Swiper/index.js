@@ -8,16 +8,18 @@ function SwiperTop(props) {
   const renderItem = () => {
     return (
       swipers.map((swiper, index) => (
-        <Swiper.Item key={swiper.id}>
+        <Swiper.Item key={`swiper-${index}`}>
           <img style={{ 'width': '100%' }} src={baseUrl + swiper.imgSrc} alt="" />
         </Swiper.Item>
       ))
     )
   }
   return (
-    <Swiper autoplay defaultIndex={0} style={{ '--height': '100%' }}>
-      {renderItem()}
-    </Swiper>
+    <>
+      <Swiper autoplay defaultIndex={0} style={{ '--height': '100%' }}>
+        {renderItem()}
+      </Swiper>
+    </>
   )
 }
 

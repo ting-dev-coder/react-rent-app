@@ -43,7 +43,7 @@ const Home = (path) => {
   }
   return (
     <div className='app'>
-      <div class="view">
+      <div className="view">
         <Outlet />
       </div>
       <footer>

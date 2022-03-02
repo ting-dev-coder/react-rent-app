@@ -3,11 +3,15 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 //引入组件
 import Home from './pages/Home'
+import HouseDetail from './pages/HouseDetail'
 import Main from './pages/Main'
+import LayoutNav from './pages/LayoutNav'
 import Houses from './pages/Houses'
 import CityList from './pages/CityList'
 import News from './pages/News'
 import Profile from './pages/Profile'
+import Login from './pages/Login'
+
 
 class Routers extends Component {
   render() {
@@ -21,7 +25,12 @@ class Routers extends Component {
             <Route path="houses" element={<Houses />} />
             <Route path="profile" element={<Profile />} />
           </Route>
+          <Route path="/login" element={<Login />} />
+          <Route path="/nav" element={<LayoutNav />}>
+            <Route path="house-detail" element={<HouseDetail />} />
+          </Route>
         </Routes>
+
       </Router >
     )
   }
